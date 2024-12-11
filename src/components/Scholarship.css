@@ -1,0 +1,194 @@
+body {
+  background: linear-gradient(to right, var(--background, #f7f7f7), var(--secondary, #d6dbf0));
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+.scholarship-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.scholarship-panel {
+  background-color: var(--highlight, #ffffff);
+  border-radius: 10px;
+  border: 1px solid var(--accent, #101210);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scholarship-panel:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px var(--shadow, rgba(0, 0, 0, 0.1));
+}
+
+.scholarship-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--text-color, #000000);
+}
+
+.scholarship-description {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: var(--text-color, #000000);
+}
+
+.scholarship-link {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.scholarship-link:hover {
+  text-decoration: underline;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: var(--highlight, #ffffff);
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.link-text {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link-text:hover {
+  text-decoration: underline;
+}
+
+.link-label,
+.scholarship-link {
+  display: inline; /* Display p tags inline */
+  margin: 0; /* Remove default margin */
+}
+
+.scholarship-link strong {
+  color: black; /* 'Link' text will remain black and will not be underlined */
+  text-decoration: none; /* Ensure 'Link' text does not have underline */
+}
+
+.scholarship-link a {
+  color: blue; /* Default link color */
+  text-decoration: none; /* Add underline only to the actual link */
+}
+
+.scholarship-link a:hover {
+  text-decoration: none; /* Keep the underline on hover */
+}
+
+.scholarship-link strong:hover {
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.scholarship-heading {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Style for Government Schemes Marquee */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.government-schemes-heading {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.government-schemes-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scheme-item {
+  font-size: 16px;
+  margin: 10px 0;
+  margin-bottom: 10px;
+  color: black; /* Set the color of the scheme name to black */
+}
+
+.scheme-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.scheme-link:hover {
+  text-decoration: underline;
+}
+
+.scholarship-heading {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.scholarship-container {
+  margin-top: 20px;
+}
+
+.scholarship-panel {
+  margin-bottom: 20px;
+}
+
+.scholarship-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.scholarship-description {
+  font-size: 16px;
+}
+
+.link-label {
+  font-size: 16px;
+}
+
+.link-text {
+  color: #007bff;
+}
+
+.link-text:hover {
+  text-decoration: underline;
+}
+
+.learn-more-link {
+  color: #007bff; /* Set the color of the "Learn more" link to blue */
+  text-decoration: none;
+}
+
+.learn-more-link:hover {
+  text-decoration: underline;
+}
+
+.visible-bullets {
+list-style-type: disc; /* Use disc bullets */
+padding-left: 20px; /* Add padding to align bullets */
+}
