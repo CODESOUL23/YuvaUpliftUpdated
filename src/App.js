@@ -13,6 +13,8 @@ import { initializeVideosCollection } from './firebase/initializeVideos';
 import { useEffect } from 'react';
 import TherapyPage from './components/TherapyPage';
 import Educational from './components/Educational'; // Add this import
+import Sponsor from './components/Sponsor'; // Connect with backend
+import ContactUs from './components/ContactUs'; // Connect with backend
 
 function App() {
   useEffect(() => {
@@ -33,6 +35,8 @@ function App() {
             <Route path="/motivation" element={<PrivateRoute><MotivationalVideos /></PrivateRoute>} />
             <Route path="/therapy" element={<PrivateRoute><TherapyPage /></PrivateRoute>} />
             <Route path="/educational" element={<PrivateRoute><Educational /></PrivateRoute>} /> {/* Add this route */}
+            <Route path="/sponsor" element={<PrivateRoute><Sponsor /></PrivateRoute>} /> {/* Connect with backend */}
+            <Route path="/contact" element={<PrivateRoute><ContactUs /></PrivateRoute>} /> {/* Connect with backend */}
           </Routes>
         </div>
       </Router>

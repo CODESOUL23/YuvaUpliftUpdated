@@ -106,9 +106,9 @@ html, body {
 .inline-options {
     display: grid;
     grid-template-columns: auto 1fr; 
-    align-items: center;
+    align-items: center; 
     gap: 10px; 
-    width: 100%; 
+    width: 100%;
 }
 
 .inline-options label {
@@ -122,7 +122,7 @@ html, body {
     margin: 0; 
     accent-color: black;
     width: 16px; 
-    height: 16px;
+    height: 16px; 
 }
 
 .submit-button {
@@ -139,4 +139,11 @@ html, body {
 
 .motivation{
     width: 95%;
+}
+
+.thank-you-message {
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
 }
