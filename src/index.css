@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+:root {
+  --gradient-1: #0F2027;  /* Deep charcoal */
+  --gradient-2: #2C5364;  /* Ocean blue */
+  --gradient-3: #203A43;  /* Slate */
+  --accent-1: #00f2fe;    /* Neon cyan */
+  --accent-2: #4facfe;    /* Electric blue */
+  --accent-3: #7367F0;    /* Purple */
+  --text-light: #FFFFFF;
+  --text-dark: #1A1A1A;
+  --card-bg: rgba(255, 255, 255, 0.1);
+  --hover-bg: rgba(255, 255, 255, 0.15);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Changed from 100% to 100vh */
+    width: 100%;
+    position: fixed;
+    /* The background styling will be handled via inline style in React */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.form-container {
+    position: relative;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none; /* Firefox */
+    z-index: 10;
+    width: 80%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.button.active {
+    background: white;
+    color: black;
+}
+
+.form {
+    width: 100%;
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+    text-align: left;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 100%;
+}
+
+.form-grid div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Left align all options */
+}
+
+.form-grid label {
+    margin-bottom: 5px;
+    color: black;
+    text-align: left;
+}
+
+.form-grid input,
+.form-grid select,
+.form-grid textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.inline-options {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Checkbox takes minimal width, label takes remaining space */
+    align-items: center; /* Aligns checkboxes and labels vertically */
+    gap: 10px; /* Space between rows and columns */
+    width: 100%; /* Ensures the layout spans the full width */
+}
+
+.inline-options label {
+    display: flex; /* Combines the checkbox and label text */
+    align-items: center; /* Aligns label text with the checkbox */
+    margin: 0; /* Prevents extra margin */
+    gap: 10px; /* Adds space between checkbox and text */
+}
+
+.inline-options input[type="checkbox"] {
+    margin: 0; /* Remove any default margins from checkboxes */
+    accent-color: black; /* Optional: Adjust checkbox theme */
+    width: 16px; /* Set a standard width for checkboxes */
+    height: 16px; /* Set a standard height for checkboxes */
+}
+
+.submit-button {
+    margin-top: 20px;
+    margin-left: -7px;
+    padding: 10px 20px;
+    width: 97%;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+}
+
+.motivation{
+    width: 95%;
+}

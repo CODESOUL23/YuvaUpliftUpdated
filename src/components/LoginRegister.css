@@ -1,0 +1,77 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, var(--gradient-3) 0%, var(--gradient-2) 100%);
+  padding: 2rem;
+}
+
+.auth-form, .survey-form {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  backdrop-filter: blur(10px);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, select {
+  padding: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+  padding: 0.8rem;
+  background: var(--accent-1);
+  border: none;
+  border-radius: 5px;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(255, 230, 109, 0.3);
+}
+
+button:hover {
+  background: var(--accent-2);
+  color: var(--text-light);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(115, 103, 240, 0.4);
+}
+
+.survey-question {
+  margin-bottom: 1rem;
+}
+
+.survey-question label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 1rem;
+  text-align: center;
+  color: #4ecca3;
+  cursor: pointer;
+}
+
+p:hover {
+  text-decoration: underline;
+}
