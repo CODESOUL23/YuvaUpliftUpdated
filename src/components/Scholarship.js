@@ -1,5 +1,5 @@
 import React from 'react';
-import './Educational.css';
+import './Scholarship.css';
 
 const scholarships = [
   {
